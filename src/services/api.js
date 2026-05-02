@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://bannister-handbook-pelt.ngrok-free.dev",
+  baseURL: import.meta.env.VITE_API_URL || '',
   timeout: 15000,
   headers: { "Content-Type": "application/json" },
 });
