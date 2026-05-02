@@ -1,0 +1,32 @@
+﻿@import "tailwindcss";
+
+@theme {
+  --font-headline: 'Space Grotesk', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-primary: #004ac6;
+  --color-primary-container: #2563eb;
+  --color-secondary: #712ae2;
+  --color-tertiary: #006242;
+  --color-background: #f9f9ff;
+  --color-surface: #f9f9ff;
+  --color-on-surface: #111c2d;
+  --color-on-surface-variant: #434655;
+  --color-outline-variant: #c3c6d7;
+  --color-surface-container-low: #f0f3ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #dee8ff;
+  --color-inverse-surface: #263143;
+  --color-error: #ba1a1a;
+}
+
+.glass-panel {
+  background: rgba(240, 243, 255, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #004ac6 0%, #2563eb 100%);
+}
