@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "",
+  baseURL: "https://bannister-handbook-pelt.ngrok-free.dev",
   timeout: 15000,
   headers: { "Content-Type": "application/json" },
 });
@@ -70,7 +70,6 @@ export const sendWhatsappAlerts = () =>
 
 export const sendMonthlyReport = (studentId) =>
   API.post(`/api/whatsapp/send-monthly-report/${studentId}`);
-
 
 // ==================== STUDENTS ====================
 export const getRegisteredStudents = () => API.get("/api/register/students");
