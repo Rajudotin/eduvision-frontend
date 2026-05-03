@@ -5,7 +5,7 @@ const API = axios.create({
   timeout: 15000,
   headers: {
     'Content-Type': 'application/json',
-    'ngrok-skip-browser-warning': 'true'  // ← ADD THIS
+    'User-Agent': 'EduVisionApp/1.0'   // ← ADD THIS
   }
 });
 
